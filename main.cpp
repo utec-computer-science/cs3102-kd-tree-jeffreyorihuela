@@ -17,4 +17,8 @@ int main()
     kdTree.insert(f);
 
     kdTree.print();
+    kdTree.search(e);
+
+    int x[]={4,4};
+    kdTree.search(x);
 }

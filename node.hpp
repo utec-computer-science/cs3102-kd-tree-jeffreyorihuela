@@ -11,7 +11,6 @@ struct Node
     node *right = nullptr;
     Node()
     {
-        
     }
     Node(T *input)
     {
@@ -20,6 +19,16 @@ struct Node
         {
             data[i] = input[i];
         }
+    }
+    bool compare(node* other)
+    {
+        bool isEqual = true;
+        for (int i = 0; i < dimension; i++)
+        {
+            if (this->data[i] != other->data[i])
+                isEqual = false;
+        }
+        return isEqual;
     }
     void print()
     {
